@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 686project.com/demos/686tees-1-1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Apr 2018 03:20:11 GMT -->
+<head>
+    <title>686 Tees</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- Bootstrap -->
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
+    <link href="~/assets/css/entypo.css" rel="stylesheet" type="text/css">
+    <!-- Template CSS -->
+    <link href="~/assets/css/686tees.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <!-- Site Top -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="top-nav">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Registration</a></li>
+                    <li><a href="forgot.html">Lost your password?</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Header -->
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <a class="logo" href="index.html">
+                    <span class="entypo star"></span> Vittoria
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-5">
+                <p class="strapline">
+                    Venta de Laptop<br />
+                    <span>Precios únicos</span>
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-3">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-6 mini-basket">
+                        <p class="mini-basket-title"><a href="basket.html"><span class="entypo cart"></span> Carrito</a></p>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <p class="mini-basket-summary">
+                                    Price<br />
+                                    <span>&pound;0.00</span>
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <p class="mini-basket-summary">
+                                    Items<br />
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu -->
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.html">New</a></li>
+                                <li><a href="products-men.html">Mens</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Womens <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="products-women.html">Tops</a></li>
+                                        <li><a href="products-women.html">Accessories</a></li>
+                                        <li><a href="products-women.html">Shoes</a></li>
+                                        <li><a href="products-women.html">Dresses</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="index-alt.html">Alternate Homepage</a></li>
+                                        <li><a href="pricing.html">Price Comparison</a></li>
+                                        <li><a href="faq.html">FAQ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="blog-listing.html">Blog Listing</a></li>
+                                        <li><a href="blog-detail.html">Blog Detail</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="navbar-form navbar-right clearfix" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-default"><span class="entypo search"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Body -->
+        @RenderBody()
+        <!-- End Body -->
+
+        <div class="row footer">
+            <div class="col-md-6">
+                <ul class="footer-nav">
+                    <li><a href="#"><img src="assets/flags/gb.png" alt="GBP" /></a> &nbsp; <a href="#"><img src="assets/flags/us.png" alt="USD" /></a> &nbsp; <a href="#"><img src="assets/flags/europeanunion.png" alt="Euro" /></a></li>
+                    <li><a href="content.html">Terms &amp; Conditions</a></li>
+                    <li><a href="content.html">Delivery Information</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 footer-right">
+                <p>
+                    &copy; Vittoria
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="~/assets/js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+<!-- Mirrored from 686project.com/demos/686tees-1-1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Apr 2018 03:20:34 GMT -->
+</html>
