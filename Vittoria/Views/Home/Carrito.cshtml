@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "Carrito";
+}
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <h1>Your Basket</h1>
+
+    </div>
+
+</div>
+
+<!-- Basket -->
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <table class="basket-table">
+            <thead>
+                <tr>
+                    <th colspan="2">Item</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th colspan="2">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="image"><a href="product.html"><img src="assets/img/product-1.jpg" alt="Ibiza Lips" /></a></td>
+                    <td class="title"><a href="product.html">Ibiza Lips</a></td>
+                    <td class="qty"><input type="text" name="qty[]" value="1" /></td>
+                    <td class="price">&pound;9.99</td>
+                    <td class="total">&pound;9.99</td>
+                    <td class="remove"><a href=""><span class="entypo trash"></span></a></td>
+                </tr>
+                <tr>
+                    <td class="image"><a href="product.html"><img src="assets/img/product-2.jpg" alt="Ibiza Banana" /></a></td>
+                    <td class="title"><a href="product.html">Ibiza Banana</a></td>
+                    <td class="qty"><input type="text" name="qty[]" value="1" /></td>
+                    <td class="price">&pound;9.99</td>
+                    <td class="total">&pound;9.99</td>
+                    <td class="remove"><a href=""><span class="entypo trash"></span></a></td>
+                </tr>
+                <tr>
+                    <td class="image"><a href="product.html"><img src="assets/img/product-3.jpg" alt="I Was There" /></a></td>
+                    <td class="title"><a href="product.html">I Was There</a></td>
+                    <td class="qty"><input type="text" name="qty[]" value="1" /></td>
+                    <td class="price">&pound;9.99</td>
+                    <td class="total">&pound;9.99</td>
+                    <td class="remove"><a href=""><span class="entypo trash"></span></a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="clearfix">
+
+            <p class="basket-total"><span>Total:</span> &pound;29.97</p>
+
+        </div>
+
+        <p class="actions">
+            <a class="btn btn-blank" href="index.html">Continue Shopping</a>
+            <a class="btn btn-blank" href="basket.html">Empty Basket</a>
+            <a class="btn btn-blank" href="basket.html">Update Basket</a>
+            <a class="btn btn-primary" href="@Url.Action("Index","Checkout")">Continue to Checkout</a>
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Related Products -->
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <h2>You May Also Like...</h2>
+
+    </div>
+
+</div>
+
+<!-- Product Listing -->
+
+<div class="row">
+
+    <div class="col-md-4 product-listing">
+
+        <p class="title"><a href="product.html">A Life Style</a></p>
+
+        <a href="product.html"><img class="image" src="assets/img/product-4.jpg" alt="A Life Style" /></a>
+
+        <p class="price">
+            &pound; 9.99
+            <a class="btn btn-addcart btn-primary" href="basket.html"><span class="entypo cart"></span></a><a class="btn btn-view btn-grey" href="product.html"><span class="entypo search"></span></a>
+        </p>
+
+    </div>
+
+    <div class="col-md-4 product-listing">
+
+        <p class="title"><a href="product.html">Amnesia Community</a></p>
+
+        <a href="product.html"><img class="image" src="assets/img/product-5.jpg" alt="Amnesia Community" /></a>
+
+        <p class="price">
+            &pound; 9.99
+            <a class="btn btn-addcart btn-primary" href="basket.html"><span class="entypo cart"></span></a><a class="btn btn-view btn-grey" href="product.html"><span class="entypo search"></span></a>
+        </p>
+
+    </div>
+
+    <div class="col-md-4 product-listing">
+
+        <p class="title"><a href="product.html">Carnal</a></p>
+
+        <a href="product.html"><img class="image" src="assets/img/product-6.jpg" alt="Carnal" /></a>
+
+        <p class="price">
+            &pound; 9.99
+            <a class="btn btn-addcart btn-primary" href="basket.html"><span class="entypo cart"></span></a><a class="btn btn-view btn-grey" href="product.html"><span class="entypo search"></span></a>
+        </p>
+
+    </div>
+
+</div>
+

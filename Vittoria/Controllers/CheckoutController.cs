@@ -6,32 +6,29 @@ using System.Web.Mvc;
 
 namespace Vittoria.Controllers
 {
-    public class HomeController : Controller
+    public class CheckoutController : Controller
     {
-        // GET: Home
+        // GET: Checkout
         public ActionResult Index()
         {
             return View();
         }
-        public ActionResult Login()
+
+        public ActionResult Details()
         {
             return View();
         }
 
-        public ActionResult SignUp()
+        public ActionResult Payment()
         {
             return View();
         }
 
-        public ActionResult Product()
+        public ActionResult Confirmation()
         {
             return View();
         }
 
-        public ActionResult Carrito()
-        {
-            return View();
-        }
 
     }
 }

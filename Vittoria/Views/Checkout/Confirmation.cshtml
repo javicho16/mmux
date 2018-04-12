@@ -1,0 +1,167 @@
+﻿
+@{
+    ViewBag.Title = "Confirmation";
+}
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="checkout-steps clearfix">
+
+            <p class="step">
+                <span class="entypo chevron-right"></span>
+                1. Login
+            </p>
+
+            <p class="step">
+                <span class="entypo chevron-right"></span>
+                2. Details
+            </p>
+
+            <p class="step">
+                <span class="entypo chevron-right"></span>
+                3. Payment
+            </p>
+
+            <p class="step step-active">
+                4. Confirmation
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Body -->
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <h1>Thank You For Your Order!</h1>
+
+        <p class="alert alert-success">Your order number is 100001. A receipt has been emailed to you.</p>
+
+    </div>
+
+</div>
+
+<!-- Basket -->
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <table class="basket-table">
+            <thead>
+                <tr>
+                    <th colspan="2">Item</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="image"><a href=@Url.Action("Product","Home")><img src="assets/img/product-1.jpg" alt="Ibiza Lips" /></a></td>
+                    <td class="title"><a href=@Url.Action("Product","Home")>Ibiza Lips</a></td>
+                    <td class="qty"><input type="text" name="qty[]" value="1" /></td>
+                    <td class="price">&pound;9.99</td>
+                    <td class="total">&pound;9.99</td>
+                </tr>
+                <tr>
+                    <td class="image"><a href=@Url.Action("Product","Home")><img src="assets/img/product-2.jpg" alt="Ibiza Banana" /></a></td>
+                    <td class="title"><a href=@Url.Action("Product","Home")>Ibiza Banana</a></td>
+                    <td class="qty"><input type="text" name="qty[]" value="1" /></td>
+                    <td class="price">&pound;9.99</td>
+                    <td class="total">&pound;9.99</td>
+                </tr>
+                <tr>
+                    <td class="image"><a href=@Url.Action("Product","Home")><img src="assets/img/product-3.jpg" alt="I Was There" /></a></td>
+                    <td class="title"><a href=@Url.Action("Product","Home")>I Was There</a></td>
+                    <td class="qty"><input type="text" name="qty[]" value="1" /></td>
+                    <td class="price">&pound;9.99</td>
+                    <td class="total">&pound;9.99</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="clearfix">
+
+            <p class="basket-total basket-total-shipping"><span>Shipping:</span> FREE</p>
+
+        </div>
+
+        <div class="clearfix">
+
+            <p class="basket-total"><span>Total:</span> &pound;29.97</p>
+
+        </div>
+
+        <p class="actions">
+            <a class="btn btn-blank" href=@Url.Action("Index","Home")>Back to Shop</a>
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Related Products -->
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <h2>You May Also Like...</h2>
+
+    </div>
+
+</div>
+
+<!-- Product Listing -->
+
+<div class="row">
+
+    <div class="col-md-4 product-listing">
+
+        <p class="title"><a href=@Url.Action("Product","Home")>A Life Style</a></p>
+
+        <a href=@Url.Action("Product","Home")><img class="image" src="assets/img/product-1.jpg" alt="A Life Style" /></a>
+
+        <p class="price">
+            &pound; 9.99
+            <a class="btn btn-addcart btn-primary" href=@Url.Action("Carrito","Home")><span class="entypo cart"></span></a><a class="btn btn-view btn-grey" href=@Url.Action("Product","Home")><span class="entypo search"></span></a>
+        </p>
+
+    </div>
+
+    <div class="col-md-4 product-listing">
+
+        <p class="title"><a href=@Url.Action("Product","Home")>Amnesia Community</a></p>
+
+        <a href=@Url.Action("Product","Home")><img class="image" src="assets/img/product-2.jpg" alt="Amnesia Community" /></a>
+
+        <p class="price">
+            &pound; 9.99
+            <a class="btn btn-addcart btn-primary" href=@Url.Action("Carrito","Home")><span class="entypo cart"></span></a><a class="btn btn-view btn-grey" href=@Url.Action("Product","Home")><span class="entypo search"></span></a>
+        </p>
+
+    </div>
+
+    <div class="col-md-4 product-listing">
+
+        <p class="title"><a href=@Url.Action("Product","Home")>Carnal</a></p>
+
+        <a href=@Url.Action("Product","Home")><img class="image" src="assets/img/product-3.jpg" alt="Carnal" /></a>
+
+        <p class="price">
+            &pound; 9.99
+            <a class="btn btn-addcart btn-primary" href=@Url.Action("Carrito","Home")><span class="entypo cart"></span></a><a class="btn btn-view btn-grey" href=@Url.Action("Product","Home")><span class="entypo search"></span></a>
+        </p>
+
+    </div>
+
+</div>
+

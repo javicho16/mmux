@@ -42,7 +42,7 @@
             <div class="col-md-4 col-sm-3">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-6 mini-basket">
-                        <p class="mini-basket-title"><a href="basket.html"><span class="entypo cart"></span> Carrito</a></p>
+                        <p class="mini-basket-title"><a href=@Url.Action("Carrito")><span class="entypo cart"></span> Carrito</a></p>
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-6">
                                 <p class="mini-basket-summary">
@@ -76,30 +76,22 @@
                         </div>
                         <div class="collapse navbar-collapse" id="navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="index.html">New</a></li>
-                                <li><a href="products-men.html">Mens</a></li>
+                                <li class="active"><a href=@Url.Action("Index","Home")>New</a></li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Womens <b class="caret"></b></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Marca<b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="products-women.html">Tops</a></li>
-                                        <li><a href="products-women.html">Accessories</a></li>
-                                        <li><a href="products-women.html">Shoes</a></li>
-                                        <li><a href="products-women.html">Dresses</a></li>
+                                        <li><a href=@Url.Action("Index","Home")>HP</a></li>
+                                        <li><a href=@Url.Action("Index","Home")>Lenovo</a></li>
+                                        <li><a href=@Url.Action("Index","Home")>Asus</a></li>
+                                        <li><a href=@Url.Action("Index","Home")>Huawei</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <b class="caret"></b></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">S. Operativo<b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="index-alt.html">Alternate Homepage</a></li>
-                                        <li><a href="pricing.html">Price Comparison</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="blog-listing.html">Blog Listing</a></li>
-                                        <li><a href="blog-detail.html">Blog Detail</a></li>
+                                        <li><a href=@Url.Action("Index","Home")>Windows</a></li>
+                                        <li><a href=@Url.Action("Index","Home")>iOS</a></li>
+                                        <li><a href=@Url.Action("Index","Home")>Linux</a></li>
                                     </ul>
                                 </li>
                             </ul>

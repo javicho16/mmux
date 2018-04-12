@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "Payment";
+}
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="checkout-steps clearfix">
+
+            <p class="step">
+                <span class="entypo chevron-right"></span>
+                1. Login
+            </p>
+
+            <p class="step">
+                <span class="entypo chevron-right"></span>
+                2. Details
+            </p>
+
+            <p class="step step-active">
+                <span class="entypo chevron-right"></span>
+                3. Payment
+            </p>
+
+            <p class="step">
+                4. Confirmation
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-6">
+
+        <div class="checkout-box checkout-box-short">
+
+            <h2>Shipping</h2>
+
+            <form action="checkout-4.html" method="post">
+
+                <p class="radios">
+                    <label for="field-shipping">Shipping Method</label><br />
+                    <input type="radio" id="field-standard" name="field-shipping" checked="checked" /> Standard - FREE<br />
+                    <input type="radio" id="field-express" name="field-shipping" /> Express - &pound;4.99<br />
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+        <div class="checkout-box checkout-box-short">
+
+            <h2>Payment</h2>
+
+            <form action="checkout-4.html" method="post">
+
+                <p class="radios">
+                    <label for="field-paypal">Payment Method</label><br />
+                    <input type="radio" id="field-card" name="field-method" checked="checked" /> Credit/Debit Card<br />
+                    <input type="radio" id="field-paypal" name="field-method" /> Paypal<br />
+                </p>
+
+                <p class="buttons">
+                    <button hidden="hidden" class="btn btn-primary" type="submit">Continue</button>
+                    <input class="btn btn-primary" type="button" value="Continue" onclick="location.href='@Url.Action("Confirmation", "Checkout")'" />
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+

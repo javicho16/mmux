@@ -1,0 +1,175 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="checkout-steps clearfix">
+
+            <p class="step">
+                <span class="entypo chevron-right"></span>
+                1. Login
+            </p>
+
+            <p class="step step-active">
+                <span class="entypo chevron-right"></span>
+                2. Details
+            </p>
+
+            <p class="step">
+                <span class="entypo chevron-right"></span>
+                3. Payment
+            </p>
+
+            <p class="step">
+                4. Confirmation
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-6">
+
+        <div class="checkout-box checkout-box-long">
+
+            <h2>Billing Information</h2>
+
+            <form action="checkout-3.html" method="post">
+
+                <p>
+                    <label for="field-fname">First Name <span class="mand">*</span></label>
+                    <input type="text" id="field-fname" name="field-fname" />
+                </p>
+
+                <p>
+                    <label for="field-lname">Last Name <span class="mand">*</span></label>
+                    <input type="text" id="field-lname" name="field-lname" />
+                </p>
+
+                <p>
+                    <label for="field-add1">Address Line 1 <span class="mand">*</span></label>
+                    <input type="text" id="field-add1" name="field-add1" />
+                </p>
+
+                <p>
+                    <label for="field-add2">Address Line 2</label>
+                    <input type="text" id="field-add2" name="field-add2" />
+                </p>
+
+                <p>
+                    <label for="field-city">City <span class="mand">*</span></label>
+                    <input type="text" id="field-city" name="field-city" />
+                </p>
+
+                <p>
+                    <label for="field-county">County <span class="mand">*</span></label>
+                    <input type="text" id="field-county" name="field-county" />
+                </p>
+
+                <p>
+                    <label for="field-postcode">Postcode <span class="mand">*</span></label>
+                    <input type="text" id="field-postcode" name="field-postcode" />
+                </p>
+
+                <p>
+                    <label for="field-country">Country <span class="mand">*</span></label>
+                    <select id="field-country" name="field-country">
+                        <option value="">United Kingdom</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="field-phone">Phone Number <span class="mand">*</span></label>
+                    <input type="text" id="field-phone" name="field-phone" />
+                </p>
+
+                <p class="chbox">
+                    <input type="checkbox" name="field-newsletter" id="field-newsletter" /> <label for="field-newsletter">Join our newsletter</label>
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+        <div class="checkout-box checkout-box-long">
+
+            <h2>Delivery Information</h2>
+
+            <form action="checkout-3.html" method="post">
+
+                <p class="chbox">
+                    <input type="checkbox" name="same-as-billing" id="same-as-billing" /> <label for="same-as-billing">Same as billing information</label>
+                </p>
+
+                <p>
+                    <label for="field-fname">First Name <span class="mand">*</span></label>
+                    <input type="text" id="field-fname" name="field-fname" />
+                </p>
+
+                <p>
+                    <label for="field-lname">Last Name <span class="mand">*</span></label>
+                    <input type="text" id="field-lname" name="field-lname" />
+                </p>
+
+                <p>
+                    <label for="field-add1">Address Line 1 <span class="mand">*</span></label>
+                    <input type="text" id="field-add1" name="field-add1" />
+                </p>
+
+                <p>
+                    <label for="field-add2">Address Line 2</label>
+                    <input type="text" id="field-add2" name="field-add2" />
+                </p>
+
+                <p>
+                    <label for="field-city">City <span class="mand">*</span></label>
+                    <input type="text" id="field-city" name="field-city" />
+                </p>
+
+                <p>
+                    <label for="field-county">County <span class="mand">*</span></label>
+                    <input type="text" id="field-county" name="field-county" />
+                </p>
+
+                <p>
+                    <label for="field-postcode">Postcode <span class="mand">*</span></label>
+                    <input type="text" id="field-postcode" name="field-postcode" />
+                </p>
+
+                <p>
+                    <label for="field-country">Country <span class="mand">*</span></label>
+                    <select id="field-country" name="field-country">
+                        <option value="">United Kingdom</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="field-phone">Phone Number <span class="mand">*</span></label>
+                    <input type="text" id="field-phone" name="field-phone" />
+                </p>
+
+                <p class="buttons">
+                    <button hidden="hidden" class="btn btn-primary" type="submit">Continue</button>
+                    <input class="btn btn-primary" type="button" value="Continue" onclick="location.href='@Url.Action("Payment", "Checkout")'" />
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+

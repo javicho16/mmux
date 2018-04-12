@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="checkout-steps clearfix">
+
+            <p class="step step-active">
+                <span class="entypo chevron-right"></span>
+                1. Login
+            </p>
+
+            <p class="step">
+                <span class="entypo chevron-right"></span>
+                2. Details
+            </p>
+
+            <p class="step">
+                <span class="entypo chevron-right"></span>
+                3. Payment
+            </p>
+
+            <p class="step">
+                4. Confirmation
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-6">
+
+        <div class="checkout-box">
+
+            <h2>Already Registered?</h2>
+
+            <p>If you've shopped with us before, please login below to continue.</p>
+
+            <form action="http://686project.com/demos/686tees-1-1/checkout-2.html" method="post">
+
+                <p>
+                    <label for="field-email">Email <span class="mand">*</span></label>
+                    <input type="text" id="field-email" name="field-email" />
+                </p>
+
+                <p>
+                    <label for="field-password">Password <span class="mand">*</span></label>
+                    <input type="password" id="field-password" name="field-password" />
+                </p>
+
+                <p class="buttons">
+                    <button hidden="hidden" class="btn btn-primary" type="submit">Continue</button>
+                    <input class="btn btn-primary" type="button" value="Continue" onclick="location.href='@Url.Action("Details", "Checkout")'" />
+                    <a class="btn btn-blank" href="forgot.html">Forgot your password?</a>
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+        <div class="checkout-box">
+
+            <h2>New Here?</h2>
+
+            <p>If this is your first time shopping with us, please fill out your details below.</p>
+
+            <form action="http://686project.com/demos/686tees-1-1/checkout-2.html" method="post">
+
+                <p>
+                    <label for="field-email">Email <span class="mand">*</span></label>
+                    <input type="text" id="field-email" name="field-email" />
+                </p>
+
+                <p>
+                    <label for="field-password">Password <span class="mand">*</span></label>
+                    <input type="password" id="field-password" name="field-password" />
+                </p>
+
+                <p>
+                    <label for="field-passwordc">Confirm Password <span class="mand">*</span></label>
+                    <input type="password" id="field-passwordc" name="field-passwordc" />
+                </p>
+
+                <p class="buttons">
+                    <button hidden="hidden" class="btn btn-primary" type="submit">Continue</button>
+                    <input class="btn btn-primary" type="button" value="Continue" onclick="location.href='@Url.Action("Details", "Checkout")'" />
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
